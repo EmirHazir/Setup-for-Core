@@ -1,0 +1,10 @@
+﻿<environment names="Development">
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/node_modules/.staging/jquery-validation-4d98d48f41591fb52ce446636b64ed8d/dist/jquery.validate.min.js"
+            asp-fallback-src="~/node_modules/jquery-validation/dist/jquery.validate.min.js" 
+            asp-fallback-test="window.jQuery && window.jQuery.validator && window.jQuery.validator.unobtrusive">
+    </script>
+</environment>
